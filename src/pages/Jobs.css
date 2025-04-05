@@ -64,6 +64,19 @@
     background-color: #2980b9;
   }
 
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+  }
+  
+  .loading-gif {
+    width: 280px;
+    height: 210px;
+    margin-bottom: 10px;
+  }
+
   @media (max-width: 768px) {
     .jobs-page {
       padding: 0.5rem 1rem;

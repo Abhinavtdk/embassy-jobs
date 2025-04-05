@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './Jobs.css';
 import JobsTable from '../components/Jobstable';
+import baymax from '../baymax.gif';
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -59,7 +60,7 @@ function Jobs() {
       localStorage.removeItem('jobsTimestamp');
       
       // Fetch new data
-      const response = await fetch('http://localhost:5000/api/jobs/combined');
+      const response = await fetch('https://sac13.pythonanywhere.com/api/jobs/combined');
       
       if (!response.ok) {
         throw new Error(`Error: ${response.status}`);
@@ -99,7 +100,12 @@ function Jobs() {
         </div>
       </div>
       
-      {loading && <div className="loading">Loading jobs...</div>}
+      {loading && (
+        <div className="loading-container">
+        <img src={baymax} alt="Loading..." className="loading-gif" />
+        <p>Loading jobs...</p>
+        </div>
+        )}
       {error && <div className="error">Error loading jobs: {error}</div>}
       {!loading && !error && <JobsTable jobs={jobs} />}
     </div>
