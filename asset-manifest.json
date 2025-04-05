@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/embassy-jobs/static/css/main.683e51ef.css",
+    "main.js": "/embassy-jobs/static/js/main.bc89befb.js",
+    "static/js/453.45d8ffda.chunk.js": "/embassy-jobs/static/js/453.45d8ffda.chunk.js",
+    "index.html": "/embassy-jobs/index.html",
+    "main.683e51ef.css.map": "/embassy-jobs/static/css/main.683e51ef.css.map",
+    "main.bc89befb.js.map": "/embassy-jobs/static/js/main.bc89befb.js.map",
+    "453.45d8ffda.chunk.js.map": "/embassy-jobs/static/js/453.45d8ffda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.683e51ef.css",
+    "static/js/main.bc89befb.js"
+  ]
+}
