@@ -1,6 +1,6 @@
-// src/components/JobsTable.js
 import React, { useState } from 'react';
 import './Jobstable.css';
+import flower from '../flower-1151963_1280.png';
 
 function JobsTable({ jobs }) {
   const [filters, setFilters] = useState({
@@ -8,10 +8,8 @@ function JobsTable({ jobs }) {
     search: ''
   });
 
-  // Get unique sources for filter dropdown
   const sources = [...new Set(jobs.map(job => job.source))];
 
-  // Filter jobs based on selected filters
   const filteredJobs = jobs.filter(job => {
     const matchesSource = !filters.source || job.source === filters.source;
     const matchesSearch = !filters.search || 
@@ -34,7 +32,7 @@ function JobsTable({ jobs }) {
         <input
           type="text"
           name="search"
-          placeholder="Search job titles..."
+          placeholder="Search jobs..."
           value={filters.search}
           onChange={handleFilterChange}
           className="search-input"
@@ -57,18 +55,22 @@ function JobsTable({ jobs }) {
         <table className="jobs-table">
           <thead>
             <tr>
+              <th></th>  
               <th>Job Title</th>
               <th>Location</th>
+              <th>Cloding Date</th>
               <th>Source</th>
-              <th>Action</th>
+              <th>Link</th>
             </tr>
           </thead>
           <tbody>
             {filteredJobs.length > 0 ? (
               filteredJobs.map((job, index) => (
                 <tr key={index}>
+                  <td><img src={flower} alt="Loading..." className="flower-pic" /></td>
                   <td>{job.title}</td>
                   <td>{job.location || 'Not specified'}</td>
+                  <td>{job.closing_date || 'Not specified'}</td>
                   <td>{job.source}</td>
                   <td>
                     <a 

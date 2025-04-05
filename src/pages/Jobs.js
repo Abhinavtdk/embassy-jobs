@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './Jobs.css';
 import JobsTable from '../components/Jobstable';
 import baymax from '../baymax.gif';
+import baymax_pic from '../baymax.jpeg';
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -12,12 +13,10 @@ function Jobs() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        // Check if we have cached jobs and they're still valid (less than 1 hour old)
         const cachedData = localStorage.getItem('jobsData');
         const cachedTimestamp = localStorage.getItem('jobsTimestamp');
         const currentTime = new Date().getTime();
         
-        // If we have cached data and it's less than 1 hour old (3600000 ms = 1 hour)
         if (cachedData && cachedTimestamp && (currentTime - parseInt(cachedTimestamp) < 3600000)) {
           console.log('Using cached jobs data');
           setJobs(JSON.parse(cachedData));
@@ -85,19 +84,10 @@ function Jobs() {
     <div className="jobs-page">
       <div className="banner-section">
         {/* Placeholder for future banner content, GIFs, images */}
-        <h1>International Embassy Jobs</h1>
-        <p>Find your next career opportunity in diplomatic missions around the world</p>
-        
-        <div className="data-info">
-          {localStorage.getItem('jobsTimestamp') && (
-            <p className="cache-info">
-              Data last updated: {new Date(parseInt(localStorage.getItem('jobsTimestamp'))).toLocaleString()}
-              <button className="refresh-button" onClick={refreshData}>
-                Refresh Data
-              </button>
-            </p>
-          )}
-        </div>
+        {/* <h1>International Embassy Jobs</h1>
+        <p>Find your next career opportunity in diplomatic missions around the world</p> */}
+        <img src={baymax_pic} alt="Loading..." className="loading-gif" />
+
       </div>
       
       {loading && (
@@ -108,6 +98,18 @@ function Jobs() {
         )}
       {error && <div className="error">Error loading jobs: {error}</div>}
       {!loading && !error && <JobsTable jobs={jobs} />}
+      {!loading && 
+        <div className="data-info">
+          {localStorage.getItem('jobsTimestamp') && (
+            <p className="cache-info">
+              {/* Data last updated: {new Date(parseInt(localStorage.getItem('jobsTimestamp'))).toLocaleString()} */}
+              <button className="refresh-button" onClick={refreshData}>
+                Refresh Data
+              </button>
+            </p>
+          )}
+        </div>
+      }
     </div>
   );
 }

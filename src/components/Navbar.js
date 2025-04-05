@@ -4,7 +4,7 @@ import './Navbar.css';
 function Navbar({ activePage, setActivePage }) {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">International Jobs Portal</div>
+      <div className="navbar-brand">Embassy Jobs</div>
       <div className="navbar-links">
         <button 
           className={`nav-link ${activePage === 'jobs' ? 'active' : ''}`}
