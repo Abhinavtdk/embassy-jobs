@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/embassy-jobs/static/css/main.a70c6c09.css",
-    "main.js": "/embassy-jobs/static/js/main.0d755fdb.js",
+    "main.css": "/embassy-jobs/static/css/main.3d862fdd.css",
+    "main.js": "/embassy-jobs/static/js/main.abf4254a.js",
     "static/js/453.45d8ffda.chunk.js": "/embassy-jobs/static/js/453.45d8ffda.chunk.js",
+    "static/media/flower-1151963_1280.png": "/embassy-jobs/static/media/flower-1151963_1280.117fdf151d510a364302.png",
     "static/media/baymax.gif": "/embassy-jobs/static/media/baymax.ed9511841a64be2ccf36.gif",
+    "static/media/baymax.jpeg": "/embassy-jobs/static/media/baymax.15d5627fd89c3bbfe1b2.jpeg",
     "index.html": "/embassy-jobs/index.html",
-    "main.a70c6c09.css.map": "/embassy-jobs/static/css/main.a70c6c09.css.map",
-    "main.0d755fdb.js.map": "/embassy-jobs/static/js/main.0d755fdb.js.map",
+    "main.3d862fdd.css.map": "/embassy-jobs/static/css/main.3d862fdd.css.map",
+    "main.abf4254a.js.map": "/embassy-jobs/static/js/main.abf4254a.js.map",
     "453.45d8ffda.chunk.js.map": "/embassy-jobs/static/js/453.45d8ffda.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a70c6c09.css",
-    "static/js/main.0d755fdb.js"
+    "static/css/main.3d862fdd.css",
+    "static/js/main.abf4254a.js"
   ]
 }
