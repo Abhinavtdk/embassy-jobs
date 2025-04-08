@@ -14,6 +14,8 @@ function Links() {
         <p> <a href="https://india.diplomatie.belgium.be/en/embassy-and-consulates/embassy-new-delhi/vacancies" target="_blank" rel="noopener noreferrer">https://india.diplomatie.belgium.be/en/embassy-and-consulates/embassy-new-delhi/vacancies</a></p>
         <p><strong>Britain: </strong></p>
         <p> <a href="https://fco.tal.net/vx/appcentre-ext/candidate/jobboard/vacancy/1/adv/?f_Item_Opportunity_15689_lk=1793" target="_blank" rel="noopener noreferrer">https://fco.tal.net/vx/appcentre-ext/candidate/jobboard/vacancy/1/adv/?f_Item_Opportunity_15689_lk=1793</a></p>
+        <p><strong>British Council: </strong></p>
+        <p> <a href="https://careers.britishcouncil.org/careers" target="_blank" rel="noopener noreferrer">https://fco.tal.net/vx/appcentre-ext/candidate/jobboard/vacancy/1/adv/?f_Item_Opportunity_15689_lk=1793</a></p>
         <p><strong>Denmark: </strong></p> 
         <p><a href="https://indien.um.dk/en/about-us/vacancies/" target="_blank" rel="noopener noreferrer">https://indien.um.dk/en/about-us/vacancies/</a></p>
         <p><strong>France: </strong></p> 
